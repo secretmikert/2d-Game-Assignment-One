@@ -35,6 +35,8 @@ public class GameController : MonoBehaviour {
     Text lifeLabel;
     [SerializeField]
     Text scoreLabel;
+	[SerializeField]
+	Text highScoreLabel;
     [SerializeField]
     Text gameOverLabel;
     [SerializeField]
@@ -50,6 +52,7 @@ public class GameController : MonoBehaviour {
 
 		gameOverLabel.gameObject.SetActive (false);
 		resetBtn.gameObject.SetActive (false);
+		highScoreLabel.gameObject.SetActive (false);
 
 		lifeLabel.gameObject.SetActive (true);
 		scoreLabel.gameObject.SetActive (true);
@@ -67,9 +70,24 @@ public class GameController : MonoBehaviour {
     public void gameOver(){
         gameOverLabel.gameObject.SetActive (true);
         resetBtn.gameObject.SetActive (true);
+		highScoreLabel.gameObject.SetActive (true);
 
         lifeLabel.gameObject.SetActive (false);
         scoreLabel.gameObject.SetActive (false);
+
+		int score = PlayerPrefs.GetInt ("HighScore");
+		int playerScore = Player.Instance.Score;
+
+		if (score == null) {
+			PlayerPrefs.SetInt ("HighScore", playerScore);
+		} else if(score < playerScore) {
+			PlayerPrefs.SetInt ("HighScore", playerScore);
+		}
+
+		highScoreLabel.text = "High Score: " + PlayerPrefs.GetInt ("HighScore").ToString();
+
+
+
     }
 
 	/// <summary>
