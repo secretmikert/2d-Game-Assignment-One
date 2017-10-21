@@ -1,0 +1,24 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ButtonClickController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerCollision.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemies/MasterBombController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BackgroundController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CoinController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemies/BombController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemies/SingleUserBombController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PowerUpControllers/PlankShieldPowerUpController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemies/RocketController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PowerUpControllers/PlankShieldController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PowerUpControllers/PlankShieldCollisionController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ButtonClickController.cs" Line="12" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
